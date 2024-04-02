@@ -1,0 +1,45 @@
+.info {
+  padding: 15px 24px;
+}
+.info h3 {
+  font-size: 20px;
+  color: #202124;
+  font-weight: 400;
+}
+.info h6 {
+  font-size: 14px;
+  margin: 24px 0 8px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8705882353);
+}
+.info p {
+  color: rgb(95, 99, 104);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.info a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-size: 14px;
+  max-width: 165px;
+  padding: 6px;
+  border-radius: 30px;
+}
+.info a:hover {
+  background-color: rgba(138, 180, 248, 0.231372549);
+}
+.info a svg {
+  fill: #1a73e8;
+}
+.info .celenderLink {
+  border-top: 1px solid rgb(95, 99, 104);
+  color: rgb(95, 99, 104);
+  padding: 16px 24px;
+  margin: 0 -24px;
+  text-align: center;
+}/*# sourceMappingURL=index.module.css.map */

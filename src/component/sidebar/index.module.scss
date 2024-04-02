@@ -1,0 +1,24 @@
+@import '../../varriables';
+.Sidebar{
+    background-color: $whiteColor;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    height: calc(100vh - 99px);
+   transform: translateX(400px);
+    transition: 0.5s;
+    .innerContent{
+        position: relative;
+        button{
+            right: 12px;
+            background-color: transparent;
+            top: 6px;
+            i{
+                color: rgb(95,99,104);
+                font-size: 33px;
+            }
+        }
+    }
+}

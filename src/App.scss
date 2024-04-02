@@ -1,0 +1,177 @@
+ @import'../src/varriables';
+
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: $bgColor;
+
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+     box-shadow: none;
+ }
+.main-vedio{
+    position: relative;
+    overflow: hidden;
+    .name{
+        color: $whiteColor;
+        padding-left: 30px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+    }
+    .activeSidebar{
+        transform:translateX(0);
+    }
+    .vedeo-fram{
+        width: calc(100% - 360px);
+    }
+    .vedio-size{
+        .capture{
+            max-width: 700px;
+            margin: auto;
+            video{
+                border-radius: 0;
+            }
+        }
+    }
+    button {
+        border: 0;
+        outline: none;
+        background-color: $secondary;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        z-index: 9;
+        right: 20px;
+
+        i {
+            color: $whiteColor;
+            font-size: 20px;
+            height: 20px;
+        }
+    }
+}
+ .capture {
+    padding: 15px 15px 0;
+     border-radius: 8px;
+
+     video {
+         width: 100%;
+         height: calc(100vh - 99px);
+         object-fit: cover;
+         border-radius: 8px;
+     }
+ }
+
+ .bottom-icons {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color: $whiteColor;
+     height: 80px;
+     padding: 0 15px;
+
+     button {
+         border: 0;
+         outline: none;
+         background-color: transparent;
+         cursor: pointer;
+
+         i {
+             color: $whiteColor;
+             font-size: 20px;
+             height: 20px;
+         }
+
+         svg {
+             fill: $whiteColor;
+         }
+     }
+
+     .buttonsGroup {
+         display: flex;
+         align-items: center;
+         column-gap: 12px;
+       
+
+         button {
+             height: 40px;
+             width: 40px;
+             border-radius: 50%;
+             background-color: $darkColor;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .end-call{
+            width: 56px;
+            background-color: $primery;
+            border-radius: 20px;
+            i{
+                transform: rotate(136deg);
+                margin-top: 3px;
+            }
+         }
+     }
+
+     .meeting-details {
+         display: flex;
+         align-items: center;
+         column-gap: 4px;
+         
+         button {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .05s;
+            position: relative;
+            span{
+                position: absolute;
+                right: 0;
+                top: -14px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $darkColor;
+                color: $whiteColor;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            &:hover{
+                background-color: #28292c;
+            }
+        }
+     }
+     .mute-microphone{
+        background-color: $primery !important;
+     }
+     .mute-camera{
+        background-color: $primery !important;
+     }
+     .caption-mode, .active-emoji, .active-hand{
+        background-color: $hover !important;
+        i{
+            color: $bgColor !important;
+        }
+        svg{
+            fill:  $bgColor !important;
+        }
+     }
+ }

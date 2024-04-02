@@ -1,0 +1,49 @@
+@import '../../varriables';
+
+.info {
+    padding: 15px 24px;
+
+    h3 {
+        font-size: 20px;
+        color: $bgColor;
+        font-weight: 400;
+    }
+
+    h6 {
+        font-size: 14px;
+        margin: 24px 0 8px;
+        font-weight: 500;
+        color: #000000de;
+    }
+    p{
+        color: rgb(95,99,104);
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        color: $secondary;
+        font-size: 14px;
+        max-width: 165px;
+        padding: 6px;
+        border-radius: 30px;
+        &:hover{
+            background-color: #8ab4f83b;
+        }
+        svg{
+        fill: $secondary;
+
+        }
+    }
+    .celenderLink{
+        border-top: 1px solid rgb(95,99,104);
+        color: rgb(95,99,104);
+        padding: 16px 24px;
+        margin: 0 -24px;
+        text-align: center;
+    }
+}
